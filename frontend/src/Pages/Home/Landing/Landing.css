@@ -1,0 +1,258 @@
+button:hover{
+    cursor: pointer;
+}
+
+.underLine{
+    width: 10rem;
+    margin-left: 45%;
+}
+
+/* === top section === */
+.top{
+    background: #FFFCF7;
+    height: 60vh;
+    display: flex;
+    gap: 10px;
+    margin-top: 10vh;
+    align-items: center;
+}
+.top .left{
+    padding: 25px;
+    color: #2B2D2F;
+    width: 50%;
+    padding-left: 4rem;
+}
+.top .left h1{
+    font-size: 35px;
+    text-align: left;
+    color: #2B2D2F;
+}
+.top .right{
+    padding: 25px;
+    overflow: hidden;
+}
+.top .right img{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    max-height: 56vh;
+    height: auto;
+    object-fit: contain;
+}
+
+/* === features section === */
+.features {
+    background: linear-gradient(180deg, #F9D976 0%, #FFF7D9 100%);
+    padding-bottom: 2rem;
+}
+.features p{
+    color: #2B2D2F;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, serif;
+    position: relative;
+    line-height: 2; 
+}
+
+.fets2{
+    height: 75%;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+.fet{
+    background-color: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(200, 109, 66, 0.14);
+    height: 200px;
+    width: 300px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 12px 30px rgba(43, 45, 47, 0.06);
+}
+
+.fet img{
+    width: 70px;
+}
+.fet h4{
+    color: #C86D42;
+}
+.fet p{
+    color: #2B2D2F;
+    font-size: 10px;
+}
+
+/* === About === */
+
+.about h4{
+    color: #2B2D2F;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.about p{
+    color: #2B2D2F;
+    padding: 50px;
+    line-height: 2rem;
+}
+
+.content{
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Apply for all */
+    gap: 5rem;
+}
+
+/* === Subjects sectuon === */
+
+.courses{
+    margin: 5.5rem 0;
+}
+.courses p{
+    color: #2B2D2F;
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+}
+.subjects{
+    display: flex;
+    gap: 2.5rem;
+    margin: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #3B82F6 0%, #76a9ff 100%);
+    width: 150px;
+    height: 130px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+}
+
+.subject p{
+    color: #fff;
+    font-size: medium;
+}
+
+.subject img{
+    width: 70px;
+}
+
+/* === Contact Us === */
+
+.contact-us{
+    margin-top: -5rem;
+}
+
+.contact h4{
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.1rem;
+    color: #2B2D2F;
+}
+
+.contact .form-submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-submit input{
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(43, 45, 47, 0.12);
+    background-color: #fff;
+    color: #2B2D2F;
+}
+
+.textArea{
+    height: 200px;
+    width: 300px;
+    resize: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #2B2D2F;
+    line-height: 1.5rem;
+    border: 1px solid rgba(43, 45, 47, 0.12);
+}
+
+.Submit-btn{
+    width: 333px;
+    background-color: #C86D42;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* === Footer === */
+.footer{
+    height: 230px;
+    background: linear-gradient(135deg, #F9D976 0%, #FFF7D9 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    color: #2B2D2F;
+}
+
+.footer .leftPart{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #2B2D2F;
+}
+
+.footer .leftPart .title{
+    display: flex;
+    align-items: center;
+    color: #2B2D2F;
+    gap: 1rem;
+}
+
+.footer .leftPart .title img{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.rightPart .links{
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    color: #2B2D2F;
+}
+
+.rightPart .links .link{
+    display: flex;
+    gap: 0.7rem;
+    width: 7rem;
+}
+
+.rightPart .links .link :hover{
+    color: #3B82F6;
+}
+
+.hr{
+    margin: 2rem 0;
+}
+
+.icons{
+    margin-left: 15rem;
+    display: flex;
+    gap: 1rem;
+}

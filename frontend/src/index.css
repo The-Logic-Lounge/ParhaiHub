@@ -1,0 +1,45 @@
+:root {
+  --mustard: #F9D976;
+  --terracotta: #C86D42;
+  --terracotta-dark: #A65A33;
+  --charcoal: #2B2D2F;
+  --cream: #FFFCF7;
+  --blue: #3B82F6;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: 'Segoe UI', sans-serif;
+  overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+a {
+  text-decoration: none;
+}

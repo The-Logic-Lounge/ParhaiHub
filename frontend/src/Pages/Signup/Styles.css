@@ -1,0 +1,149 @@
+.section{
+   display: flex;
+   align-items: center;  
+   margin-left: 200px;
+   background: #FFFCF7;
+}
+
+.article{
+    min-height: auto;
+    width: 23rem;
+    color: #2B2D2F;
+    font-family: sans-serif;
+    background: linear-gradient(180deg, #FFF5F0 0%, #FFFCF7 100%);
+    padding: 3px;
+    border-radius: 18px;
+    border: 1px solid rgba(43, 45, 47, 0.08);
+    margin: auto;
+    margin-top: 20px; 
+    box-shadow: 0 18px 44px rgba(43, 45, 47, 0.08);
+}
+
+.logo-1{
+    margin-left: 30px;
+}
+
+.header{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.head{
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #2B2D2F;
+}
+
+.Sub-head{
+     margin-top: 10px;
+     font-size: 14px;
+     color: #2B2D2F;
+}
+
+.inpts{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.input-x{
+    border: 1px solid rgba(43, 45, 47, 0.18);
+    outline: 0;
+    background: #F5EDE8;
+    width: 70%;
+    padding-block:10px ;
+    border-radius: 10px;
+    padding-left: 1rem;
+    color: #2B2D2F;
+    margin:10px;
+}
+
+.input-x::placeholder{
+    font-size: 16px;
+    padding-left: 10px;
+    color: #555555;
+}
+
+.signup-password-field{
+    position: relative;
+}
+
+.signup-password-field .input-x{
+    padding-right: 3rem;
+}
+
+.signup-password-toggle{
+    position: absolute;
+    right: 16%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    padding: 0.25rem;
+    background: transparent;
+    color: #2B2D2F;
+    box-shadow: none;
+}
+
+.signup-password-toggle:hover{
+    background: transparent;
+    transform: translateY(-50%);
+}
+
+.signup-password-toggle svg{
+    display: block;
+}
+
+.rad-btns{
+   margin: 1.2rem;
+   margin-left: 5rem;
+}
+
+.signupage{
+    margin-top: 15px;
+    text-align: center;
+    color: #2B2D2F;
+}
+.signupage .link{
+    color: #2B2D2F;
+}
+.signupage span{
+    font-size: small;
+}
+
+.btn-4{
+    color: #FFF;
+    background-color:#C86D42;
+    display:block;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5.5rem;
+    width:50%;
+    padding: 10px;
+   border-radius: 10px;
+   transition: all linear 0.1s;
+  
+}
+
+.btn-4:hover{
+    background-color: #A65A33;
+    color:#fff;
+}
+
+.btn{
+    margin-bottom: 1rem;
+}
+
+.imgs{
+    width: 80%;
+    margin-top: 40px;
+}
+
+.right-part{
+    margin-left: 90px;
+}
+
+.error-message{
+    color: #d41717;
+    font-size: 0.9rem;
+}

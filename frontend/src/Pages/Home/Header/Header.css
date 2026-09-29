@@ -1,0 +1,49 @@
+.gapError{
+    height: 10vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo img{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+.logo h3{
+    color: #2B2D2F;
+    font-family: 'Gill Sans MT', sans-serif;
+    text-decoration: none;
+}
+.link-nav ul{
+    list-style: none;
+    color: #2B2D2F;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+button{
+    background-color: #C86D42;
+    border: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 8px 16px rgba(200, 109, 66, 0.2);
+}
+
+button:hover{
+    background-color: #A65A33;
+}
+
+.deactive{
+    color: #2B2D2F;
+    text-decoration: none;
+}
+.active{
+    color:#3B82F6;
+    text-decoration: none;
+}

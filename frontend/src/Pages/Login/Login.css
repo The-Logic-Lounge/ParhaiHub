@@ -1,0 +1,153 @@
+.main{
+  margin-top: 10vh;
+  margin-left: 10vh;
+  color: #2B2D2F;
+  font-family: sans-serif;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  background: #FFFCF7;
+}
+
+.main::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.container{
+ min-height: auto; 
+ width:380px;
+ background: linear-gradient(180deg, #FFF5F0 0%, #FFFCF7 100%);
+ text-align: center;
+ border-radius: 18px;
+ box-shadow: 0 18px 44px rgba(43, 45, 47, 0.08);
+ border: 1px solid rgba(43, 45, 47, 0.06);
+}
+
+.para1{
+  font-size: large;
+  margin-top: 10px;
+  color: #2B2D2F;
+}
+
+.logo{
+ padding: 15px;
+}
+
+.para{
+   margin-top: 20px;
+   font-size: 16px;
+   letter-spacing: 1px;
+   color: #2B2D2F;
+}
+.form{
+  margin-top:40px;
+}
+.input-0{
+    border: 1px solid rgba(43, 45, 47, 0.18);
+    outline: 0;
+    background: #FFF5F0;
+    width: 70%;
+    padding-block: 17px ;
+    border-radius: 15px;
+    padding-left: 1rem;
+    color: #2B2D2F;
+}
+
+.password-field{
+  position: relative;
+}
+
+.password-field .input-0{
+  padding-right: 3rem;
+}
+
+.password-toggle{
+  position: absolute;
+  right: 17%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  padding: 0.25rem;
+  background: transparent;
+  color: #2B2D2F;
+  box-shadow: none;
+}
+
+.password-toggle:hover{
+  background: transparent;
+  transform: translateY(-50%);
+}
+
+.password-toggle svg{
+  display: block;
+}
+
+.input-0::placeholder{
+  font-size: 16px;
+  padding-left: 20px;
+  color: #555555;
+}
+
+.input-2{
+  margin-top:20px;
+}
+
+.btns{
+ margin-top: 2rem;
+ display: flex;
+ justify-content: center;
+ gap: 80px;
+ margin-bottom: 1rem;
+}
+
+.btns-1{
+  background-color: #C86D42;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  color: white;
+}
+
+.btns-1:hover {
+  background-color: #A65A33;
+}
+
+.radio-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.signup-link{
+  margin-top: 20px;
+  font-size: small;
+  color: #2B2D2F;
+}
+
+.signup-link p{
+  color: #2B2D2F; 
+}
+
+.signup-link .link,
+.signup-link + div{
+  color: #000000;
+}
+
+.img-3{
+  flex: 0 1 600px;
+}
+
+.img-3 img{
+  display: block;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* .signup-link .link{
+  color: green;
+  font-size: medium;
+} */

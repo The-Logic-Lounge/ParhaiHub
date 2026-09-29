@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: elearning-db
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./backend
+    container_name: elearning-backend
+    restart: unless-stopped
+    ports:
+      - "4400:4400"
+    env_file:
+      - ./backend/.env
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/eLearning
+      - PORT=4400
+      - ACCESS_TOKEN_SECRET=dev_secret_123
+      - REFRESH_TOKEN_SECRET=dev_secret_456
+      - BACKEND_URL=http://localhost:4400
+    depends_on:
+      - mongodb
+
+  frontend:
+    build: ./frontend
+    container_name: elearning-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_BACKEND_URL=http://localhost:4400
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:

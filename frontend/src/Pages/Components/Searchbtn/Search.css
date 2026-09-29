@@ -1,0 +1,30 @@
+/* === search btn === */
+.search{
+    display: flex;
+    padding-top: 4rem;
+    width: 450px;
+    position: relative;
+}
+.search img{
+    position: absolute;
+    margin: 5px;
+}
+.search input{
+    width: 450px;
+    height: 3rem;
+    border: 1px solid rgba(43, 45, 47, 0.12);
+    border-radius: 10px;
+    padding-left: 50px;
+    background-color: #fff;
+    color:#2B2D2F;
+    font-weight: 600;
+}
+
+.search button{
+    position: absolute;
+    right: 0;
+    border-radius: 8px;
+    margin: 5.5px 5.5px;
+    height: 35px;
+    background-color: #C86D42;
+}
