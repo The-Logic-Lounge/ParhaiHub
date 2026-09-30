@@ -1,101 +1,181 @@
-
 # ParhaiHub
 
-ParhaiHub is an online learning platform using MERN Stack,
-Please visit [here](https://code2tutorial.com/tutorial/55a23a94-6cb7-4c48-92c1-f96db207f791/index.md) for a better understanding of the project.
-## Objective:
+**ParhaiHub** is a MERN-stack online learning platform designed to provide a simple and interactive learning experience for students and teachers.
 
-Develop a comprehensive online learning platform with three user types (Student, Teacher, Admin), featuring course creation, approval process, and live video conferencing.
+## 🎯 Objective
 
-## *BACKEND for the PROJECT
-   - Backend is developed by [Parag](https://github.com/paragkadyan).
+The objective of ParhaiHub is to provide an online education platform where:
 
-## Features
-![Screenshot 2024-05-14 212028](https://github.com/Pika003/e-Learning-Platform/assets/104189733/e2f9ce48-764b-48d2-8af1-188ea2918e8c)
+* Students can explore and access learning courses.
+* Teachers can create and manage courses.
+* Students can track their learning progress.
+* Teachers and students can interact through the platform.
+* Quizzes and learning activities can be integrated into courses.
+* The platform provides separate experiences for students and teachers.
 
+## ✨ Features
 
-#### 1. *User Authentication:*
-   - Student Login [/login]
-   - Teacher Login [/login]
-   - Admin Login [/adminLogin]
+### 👨‍🎓 Student
 
-     ![Screenshot 2024-05-14 211251](https://github.com/Pika003/e-Learning-Platform/assets/104189733/3179ba23-ae52-4ab5-8d0a-b2891cc43e0f)
+* Student registration and login
+* Browse available courses
+* Enroll in courses
+* Access course content
+* Track learning progress
+* Attempt quizzes
+* Submit course reviews and ratings
+* Forgot-password and password-reset functionality
 
-![Screenshot 2024-05-14 211154](https://github.com/Pika003/e-Learning-Platform/assets/104189733/377d8aa0-c35b-46d0-9408-f18b6ecb1ac1)
+### 👨‍🏫 Teacher
 
-#### 2. *Application Approval:*
-   - Students and teachers can submit applications for approval.
-   - Admin validates and approves applications.
+* Teacher registration and login
+* Teacher dashboard
+* Create and manage courses
+* Add course content
+* Manage enrolled students
+* Track course-related information
+* Teacher authentication and password recovery
 
-     ![Screenshot 2024-05-15 212149](https://github.com/Pika003/e-Learning-Platform/assets/104189733/6e8afdba-a8a5-47e3-977c-f5292e136c3f)
+### 🔐 Authentication
 
+* Secure student and teacher authentication
+* JWT-based authentication
+* Protected routes
+* Forgot-password functionality
+* Email-based password reset
 
-#### 3. *Dashboard:*
-   - Students see purchased courses, progress, and communication options.
-   - Teachers view created courses, student enrollments, and communication features.
+### 📚 Course Management
 
-     
-![Screenshot 2024-05-14 211938](https://github.com/Pika003/e-Learning-Platform/assets/104189733/1008e68d-b683-4e8a-bc85-6d5890946724)
-![Screenshot 2024-05-14 211854](https://github.com/Pika003/e-Learning-Platform/assets/104189733/c857a214-5366-49db-8035-13d2bfb88396)
-#### 4. *Course Purchase:*
+* Course creation and management
+* Course browsing and enrollment
+* Course content consumption
+* Learning progress tracking
 
-   - Students can browse and buy courses on the platform.
-     
-![Screenshot 2024-05-14 211813](https://github.com/Pika003/e-Learning-Platform/assets/104189733/1578ca04-b85d-4c7b-8875-12f6756f2621)
+### 📝 Quizzes
 
-#### 5. *Live Video Conferencing:*
-   - Integrated video conferencing tool (similar to Google Meet) for real-time teacher-student interaction.
+* Course-based quizzes
+* Quiz questions and answers
+* Quiz submission and results
+* Support for expanding the platform with AI-generated quiz questions
 
-#### 6. *Communication:*
-   - An in-platform messaging system for communication between teachers and students.
+### ⭐ Reviews & Ratings
 
-#### 7. *Payment Integration:*
-   - Integrate a secure payment gateway for course purchases.
+* Students can submit reviews
+* Course ratings help provide feedback about learning content
 
-----
+## 🛠️ Tech Stack
 
+### Frontend
 
-## *Tech Stack:*
+* React
+* Vite
+* JavaScript
+* Material UI
+* Tailwind CSS
+* Axios
 
-#### *UI/UX:*
-  - [figma](https://www.figma.com/file/6b4R8evBkii6mI53IA4vSS/Online-Learning-Platform?type=design&node-id=0-1&mode=design&t=HBUPk2hRYW3ioAUj-0) 
-  - Dribbble
+### Backend
 
-#### *Frontend:*
-  - React (Vite) for dynamic and responsive UI.
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
 
-#### *Backend:*
-  - Node.js, Express and Mongoose for server-side development.
+### Authentication & Services
 
-#### *Database:*
-  - MongoDB for storing user profiles, course details, and application data.
+* JWT
+* Nodemailer
+* Gmail SMTP for password-reset emails
 
-#### *Authentication:*
-  - JWT (JSON Web Tokens) for secure authentication.
+## 📁 Project Structure
 
-#### *Video Conferencing:*
-
----
+```text
+ParhaiHub/
+│
+├── frontend/
+│   └── React + Vite application
+│
+├── backend/
+│   └── Node.js + Express API
+│
+├── .gitignore
+├── package.json
+└── README.md
+```
 
 ## 🛠️ Installation & Running Locally
 
-Follow the steps below to run the project on your local machine.
+### Prerequisites
 
-### ✅ Prerequisites
+Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (v14 or above)
-- [MongoDB](https://www.mongodb.com/) (local or Atlas cloud)
-- [Git](https://git-scm.com/)
+* Node.js
+* MongoDB or MongoDB Atlas
+* Git
 
----
-
-### 📦 Clone the Repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Pika003/e-Learning-Platform.git
-cd e-Learning-Platform
-  - Fill the env file with your credentials
+git clone https://github.com/The-Logic-Lounge/ParhaiHub.git
+cd ParhaiHub
+```
+
+### 2. Install Backend Dependencies
+
+```bash
+cd backend
 npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file inside the `backend` folder and add the required database, authentication, and email configuration.
+
+**Do not commit your `.env` file to GitHub.**
+
+### 4. Start the Backend
+
+```bash
 npm run dev
+```
 
+The backend runs on:
 
+```text
+http://localhost:4400
+```
+
+### 5. Install Frontend Dependencies
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+```
+
+### 6. Start the Frontend
+
+```bash
+npm run dev
+```
+
+The frontend will be available at:
+
+```text
+http://localhost:5173
+```
+
+## 🚀 Future Improvements
+
+* AI-generated quiz questions from course content
+* Improved course recommendation system
+* Additional learning analytics
+* Enhanced teacher-student communication
+* More interactive learning features
+
+## 👩‍💻 Project
+
+**ParhaiHub — Online Learning Platform**
+
+Built as a MERN-stack e-learning project.
