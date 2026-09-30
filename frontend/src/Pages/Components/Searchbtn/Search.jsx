@@ -213,12 +213,12 @@ function Search() {
           Find Teacher
         </button>
       </div>
-      <div className="overflow-auto">
+      <div className="course-search-results overflow-auto">
         {course &&
           course.map((Data) => (
             <div
               key={Data._id}
-              className="relative bg-blue-600 p-4 gap-6 mb-3 flex  rounded-sm max-w-4xl h-20 items-start"
+              className="course-search-card relative bg-blue-600 p-4 gap-6 mb-3 flex  rounded-sm max-w-4xl h-20 items-start"
             >
               <div className="h-fit font-bold text-blue-900">
                 {Data.coursename.toUpperCase()}
@@ -248,7 +248,7 @@ function Search() {
                   Already Full
                 </div>
               )}
-              <div className="absolute bottom-2">
+              <div className="course-timing absolute bottom-2">
                 <span className='mt-2 font-bold'>Timing : </span>
                 {'[ '}
                 {Data.schedule.map(daytime => {

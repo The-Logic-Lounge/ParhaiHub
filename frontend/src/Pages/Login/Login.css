@@ -147,6 +147,51 @@
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .main {
+    margin: 1rem auto 0;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .container {
+    width: min(100%, 23.75rem);
+    padding: 0 0.5rem;
+  }
+
+  .img-3 {
+    flex: 0 1 auto;
+    width: min(100%, 36rem);
+  }
+
+  .img-3 img {
+    width: 100%;
+  }
+
+  .password-toggle {
+    right: 17%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 0.75rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .input-0 {
+    width: 90%;
+  }
+
+  .password-toggle {
+    right: 7%;
+  }
+}
+
 /* .signup-link .link{
   color: green;
   font-size: medium;

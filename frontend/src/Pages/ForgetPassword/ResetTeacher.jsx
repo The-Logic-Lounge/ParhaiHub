@@ -64,11 +64,11 @@ const ResetTeacher = () => {
   };
 
   return (
-    <div className="h-[100vh] flex items-center justify-center">
+    <div className="reset-password-page h-[100vh] flex items-center justify-center">
         
       <form 
         noValidate 
-        className="w-[27rem] text-xl bg-cyan-900 p-12 shadow-[0_0_10px_white] flex flex-col gap-5 text-white font-semibold rounded-md"
+        className="reset-password-form w-[27rem] text-xl bg-cyan-900 p-12 shadow-[0_0_10px_white] flex flex-col gap-5 text-white font-semibold rounded-md"
         onSubmit={handleSubmit}
       >
         <h1 className=' font-semibold text-center text-xl mb-3 text-white'>This link is valid for 15 mins otherwise password will not updated</h1>

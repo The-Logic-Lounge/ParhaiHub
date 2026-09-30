@@ -55,5 +55,13 @@
     border-color: #4c8bf5;
     box-shadow: 0 0 10px #4c8bf580;
   }
+
+  @media (max-width: 480px) {
+    .radio-buttons-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem 1rem;
+    }
+  }
   
   

@@ -65,18 +65,18 @@ function TeacherDashboard() {
         </div>
       </nav>
 
-      <div className='bg-[#F9D976] flex justify-between items-center'>
-        <div className=' text-[#2B2D2F] font-semibold text-5xl ml-72'>
+      <div className='dashboard-hero bg-[#F9D976] flex justify-between items-center'>
+        <div className='dashboard-welcome text-[#2B2D2F] font-semibold text-5xl ml-72'>
           <h1 className='mb-5'>Welcome to <span className='text-[#C86D42]'>ParhaiHub</span></h1>
           <h3 className='ml-16 text-[#2B2D2F]'>{data.Firstname} {data.Lastname}</h3>
         </div>
-        <div className='m-5 mr-20'>
+        <div className='dashboard-image m-5 mr-20'>
           <img src={teachingImg} alt="teaching" width={300}/>
         </div>
       </div>
 
       {/* sidebar */}
-      <div className='bg-[#3B82F6] w-52 h-full absolute top-20'>
+      <div className='dashboard-sidebar bg-[#3B82F6] w-52 h-full absolute top-20'>
         <div className='flex flex-col gap-4 text-xl items-center text-white mt-8 mb-10'>
           <img 
             src="https://www.pngall.com/wp-content/uploads/5/Profile-Male-PNG.png" 

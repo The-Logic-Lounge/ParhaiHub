@@ -64,10 +64,10 @@ function search() {
                 <input type="text" placeholder='Ex: Math ...' value={data} onChange={(e)=>setData(e.target.value)}/>
                 <button className='w-32' onClick={SearchTeacher}>Find Teacher</button>
             </div>
-            <div className='overflow-auto '>
+            <div className='course-search-results overflow-auto '>
                 { course && (
                     course.map((Data)=>(
-                    <div key={Data._id} className='relative bg-[#F9D976] p-4 gap-6 h-20 mb-3 flex items-start rounded-sm w-[75rem] border border-[#C86D42]/20 shadow-sm'>
+                    <div key={Data._id} className='course-search-card relative bg-[#F9D976] p-4 gap-6 h-20 mb-3 flex items-start rounded-sm w-[75rem] border border-[#C86D42]/20 shadow-sm'>
                         <div className='text-[#2B2D2F] font-bold'>
                         {Data.coursename.toUpperCase()} 
                         </div>
@@ -79,7 +79,7 @@ function search() {
                         <div className='absolute right-4'>
                             <div onClick={()=> alert('Pls login to enroll it')} className='text-white bg-[#C86D42] py-2 px-3 cursor-not-allowed hover:bg-[#A65A33]'>Enroll Now</div>
                         </div>
-                        <div className="absolute bottom-2">
+                        <div className="course-timing absolute bottom-2">
                             <span className='mt-2 font-bold'>Timing : </span>
                             {'[ '}
                             {Data.schedule.map(daytime => {

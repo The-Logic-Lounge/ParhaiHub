@@ -6,7 +6,9 @@ function StudentLayout() {
   return (
     <>
     <StudentDashboard/>
-    <Outlet/>
+    <main className="dashboard-content">
+      <Outlet/>
+    </main>
     </>
   )
 }

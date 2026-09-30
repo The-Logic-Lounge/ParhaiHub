@@ -118,7 +118,7 @@ const TeacherDocument = () => {
           <span className="text-white text-xl ml-1">Uploading ...</span>
         </div>
       )}
-      <div className="flex items-center gap-[20rem] px-32 py-2 bg-[#FFFCF7] border-b border-[#F3E7D0]">
+      <div className="document-header flex items-center gap-[20rem] px-32 py-2 bg-[#FFFCF7] border-b border-[#F3E7D0]">
         <div className="flex items-center gap-3">
           <img src={logo} className="w-14 object-contain" alt="ParhaiHub" />
           <h1 className="text-2xl text-[#2B2D2F] font-bold">ParhaiHub</h1>
@@ -126,7 +126,7 @@ const TeacherDocument = () => {
         <h2 className="text-[#2B2D2F] text-xl">Document Verification (Teacher) </h2>
       </div>
       <hr />
-      <form onSubmit={handleSubmit} className="bg-[#FFFCF7] text-[#2B2D2F] min-h-screen">
+      <form onSubmit={handleSubmit} className="document-form bg-[#FFFCF7] text-[#2B2D2F] min-h-screen">
         <p className="text-[#3B82F6] p-5 px-10">Personal Information</p>
         <div className="flex flex-wrap gap-20 px-36 mb-10">
           <Input
@@ -277,7 +277,7 @@ const TeacherDocument = () => {
         </div>
 
         {error && <p className=" text-white text-xl m-5 text-center">!! {error}</p>}
-        <div className=" bg-[#C86D42] p-3 m-6 rounded-md w-[7rem] ml-[85%] cursor-pointer">
+        <div className="document-submit bg-[#C86D42] p-3 m-6 rounded-md w-[7rem] ml-[85%] cursor-pointer">
           <button className=" text-white text-sm" type="submit">
             Submit ▶️
           </button>

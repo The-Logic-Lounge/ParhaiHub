@@ -13,7 +13,7 @@ function Rejected() {
 
   return (
     <>
-      <div className="flex flex-col gap-6 items-center py-5">
+      <div className="response-page flex flex-col gap-6 items-center py-5 px-4">
         <img src={rejected} width={350} alt="" />
         <h1 className="text-[#F37070] text-4xl font-bold">Response Rejected</h1>
         <p className="text-[#fadcb6] text-xl w-[35rem] text-center">

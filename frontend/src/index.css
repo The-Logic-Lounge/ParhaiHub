@@ -25,11 +25,637 @@ body {
   background: var(--cream);
   color: var(--charcoal);
   font-family: 'Segoe UI', sans-serif;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  header {
+    gap: clamp(1rem, 3vw, 2rem) !important;
+    justify-content: space-around !important;
+  }
+
+  .dashboard-hero {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .dashboard-welcome {
+    margin-left: 0 !important;
+    font-size: clamp(1.75rem, 5vw, 3rem) !important;
+  }
+
+  .dashboard-welcome h3 {
+    margin-left: 0 !important;
+  }
+
+  .dashboard-image {
+    margin-right: 0 !important;
+  }
+
+  .dashboard-sidebar {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .dashboard-sidebar > div:first-child,
+  .dashboard-sidebar > div:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+  }
+
+  .dashboard-sidebar a {
+    padding: 0.6rem 0.75rem !important;
+    white-space: nowrap;
+  }
+
+  .dashboard-content {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 1rem;
+  }
+
+  .dashboard-content > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .dashboard-content > div.flex {
+    flex-wrap: wrap;
+  }
+
+  .dashboard-content .w-\[30rem\],
+  .dashboard-content .w-96,
+  .dashboard-content .h-\[17rem\] {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .dashboard-content h1.absolute,
+  .dashboard-content .absolute.right-10 {
+    position: static !important;
+  }
+
+  .dashboard-content .pl-48,
+  .dashboard-content .pl-\[12rem\],
+  .dashboard-content .mx-48 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .document-header {
+    flex-wrap: wrap;
+    gap: 2rem !important;
+    padding: 0.75rem 2rem !important;
+  }
+
+  .document-form > .flex,
+  .document-form .border > .flex {
+    flex-wrap: wrap;
+    gap: 1rem !important;
+  }
+
+  .document-form > .flex {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .document-form > .border {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+
+  .document-form .flex.flex-col {
+    width: min(100%, 20rem);
+  }
+
+  .document-form .w-80 {
+    width: 100% !important;
+  }
+
+  .document-submit {
+    position: static !important;
+    width: fit-content;
+    margin: 1rem 1rem 1rem auto !important;
+  }
+
+  .course-search-results {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .course-search-card {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto !important;
+    min-height: 5rem;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .course-search-card > .absolute {
+    position: static !important;
+  }
+
+  .course-search-card .course-timing {
+    width: 100%;
+  }
+
+  .features > .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fets2 {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .subjects {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .img-3 {
+    flex: 0 1 31rem;
+  }
+
+  .section {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .right-part {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: auto !important;
+    min-height: 4rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem !important;
+  }
+
+  header {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.5rem 1rem !important;
+    justify-content: initial !important;
+    padding: 0.5rem 0.75rem;
+  }
+
+  header > .link-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  header > div:last-of-type {
+    grid-column: 2;
+    grid-row: 1;
+    gap: 0.5rem !important;
+  }
+
+  header .link-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+  }
+
+  header .logo {
+    gap: 0.5rem;
+  }
+
+  header .logo img {
+    height: 40px;
+  }
+
+  header .logo h1 {
+    font-size: 1.15rem;
+  }
+
+  header button {
+    width: auto;
+    min-width: 4rem;
+    padding: 0 0.65rem;
+  }
+
+  .gapError {
+    height: 7.5rem;
+  }
+
+  .dashboard-hero {
+    flex-direction: column;
+    gap: 0;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .dashboard-welcome {
+    margin: 0 !important;
+    font-size: clamp(1.75rem, 7vw, 2.5rem) !important;
+  }
+
+  .dashboard-welcome h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  .dashboard-welcome h3 {
+    margin-left: 0 !important;
+  }
+
+  .dashboard-image {
+    margin: 1rem 0 0 !important;
+  }
+
+  .dashboard-image img {
+    width: min(100%, 16rem);
+    height: auto;
+  }
+
+  .dashboard-sidebar {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .dashboard-sidebar > div:first-child {
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .dashboard-sidebar > div:first-child img {
+    width: 2.5rem;
+  }
+
+  .dashboard-sidebar > div:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.25rem;
+  }
+
+  .dashboard-sidebar a {
+    padding: 0.6rem 0.75rem !important;
+    white-space: nowrap;
+  }
+
+  .dashboard-content {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 1rem;
+  }
+
+  .dashboard-content > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .dashboard-content > div.flex {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .dashboard-content .w-\[30rem\],
+  .dashboard-content .w-96,
+  .dashboard-content .h-\[17rem\] {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .dashboard-content h1.absolute {
+    position: static !important;
+  }
+
+  .dashboard-content .absolute.right-10 {
+    position: static !important;
+    align-self: flex-start;
+  }
+
+  .dashboard-content .pl-48,
+  .dashboard-content .pl-\[12rem\] {
+    padding-left: 0 !important;
+  }
+
+  .dashboard-content .mx-48 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .dashboard-content .flex.gap-60 {
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+  }
+
+  .dashboard-content .flex.gap-32 {
+    flex-wrap: wrap;
+    gap: 1.5rem !important;
+  }
+
+  .dashboard-content .flex.justify-between {
+    justify-content: flex-start;
+  }
+
+  .dashboard-content .h-52 {
+    height: auto;
+    min-height: 10rem;
+  }
+
+  .dashboard-content > div.flex > a {
+    width: 100%;
+  }
+
+  .dashboard-content > div.flex > a > div {
+    width: 100%;
+  }
+
+  .dashboard-content .fixed.inset-0 > div {
+    width: calc(100vw - 2rem) !important;
+    max-width: 40rem;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .document-header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem !important;
+    padding: 0.75rem 1rem !important;
+  }
+
+  .document-header h2 {
+    font-size: 1rem;
+  }
+
+  .document-form > .flex {
+    gap: 1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .document-form > .border {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    padding: 0.5rem;
+  }
+
+  .document-form .border > .flex {
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+    align-items: flex-start;
+  }
+
+  .document-form .flex.flex-col {
+    width: min(100%, 20rem);
+  }
+
+  .document-form .w-80 {
+    width: 100% !important;
+  }
+
+  .document-submit {
+    position: static !important;
+    width: fit-content;
+    margin: 1rem 1rem 1rem auto !important;
+  }
+
+  .course-search-results {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .search {
+    width: min(100%, 28rem);
+  }
+
+  .search input {
+    width: 100%;
+    padding-right: 8.5rem;
+  }
+
+  .course-search-card {
+    height: auto !important;
+    min-height: 5rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .course-search-card > .absolute {
+    position: static !important;
+  }
+
+  .course-search-card .course-timing {
+    width: 100%;
+  }
+
+  .fixed.inset-0 > div {
+    width: calc(100vw - 2rem) !important;
+    max-width: 40rem;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .fixed.inset-0 > div > .flex {
+    flex-wrap: wrap;
+  }
+
+  .features > .flex > .flex.gap-5 {
+    justify-content: center;
+  }
+
+  .features > .flex > .flex > img {
+    height: auto;
+  }
+
+  .course-search-card {
+    width: 100% !important;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .fixed.inset-0 > div .flex.gap-1 {
+    flex-wrap: wrap;
+  }
+
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  iframe,
+  canvas {
+    max-width: 100%;
+  }
+
+  .reset-password-page {
+    min-height: 100vh;
+    height: auto !important;
+    padding: 1rem;
+  }
+
+  .reset-password-form {
+    width: min(100%, 27rem) !important;
+    padding: 1.5rem !important;
+    font-size: 1rem !important;
+  }
+
+  .admin-page,
+  .admin-course-page {
+    height: auto !important;
+    min-height: 100vh;
+  }
+
+  .admin-page > div:first-of-type > .absolute {
+    position: static !important;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  .admin-page > div:first-of-type .w-\[30rem\] {
+    position: static !important;
+    width: 100% !important;
+    margin: 0.5rem 0;
+  }
+
+  .admin-page > .flex.items-start.justify-center {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .admin-page > .flex.items-start.justify-center > div {
+    width: 100%;
+  }
+
+  .admin-page .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-course-page .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-verification-page nav {
+    height: auto;
+    min-height: 4rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .admin-verification-page > .flex {
+    flex-wrap: wrap;
+    gap: 1rem !important;
+    padding: 0 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .admin-verification-page > .flex > div {
+    width: min(100%, 32rem);
+  }
+
+  .admin-verification-page textarea {
+    width: 100% !important;
+  }
+
+  .response-page p {
+    width: min(calc(100vw - 2rem), 35rem) !important;
+    font-size: 1rem;
+  }
+
+  .verification-result {
+    width: min(calc(100vw - 2rem), 24rem) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo img {
+    height: 34px;
+  }
+
+  header .logo h1 {
+    font-size: 1rem;
+  }
+
+  header button {
+    min-width: 3.5rem;
+    padding: 0 0.45rem;
+    font-size: 0.85rem;
+  }
+
+  .dashboard-sidebar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar > div:last-child {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dashboard-sidebar a {
+    padding: 0.55rem 0.65rem !important;
+    font-size: 0.9rem;
+  }
+
+  .document-form .mt-3.relative > div {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .document-form .mt-3.relative span:first-child {
+    min-width: 0;
+    margin-right: 0 !important;
+    overflow-wrap: anywhere;
+  }
 }
 
 button {

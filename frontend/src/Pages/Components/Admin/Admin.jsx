@@ -110,7 +110,7 @@ const Admin = () => {
 
 
   return (
-    <div className="h-[100vh]">
+    <div className="admin-page h-[100vh]">
       {/* Navbar */}
       <nav className="h-16 sm:h-20 md:h-24 lg:h-24  w-full bg-[#FFFCF7] flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 shadow-sm border-b border-[#F3E7D0]">
         <NavLink to='/'>

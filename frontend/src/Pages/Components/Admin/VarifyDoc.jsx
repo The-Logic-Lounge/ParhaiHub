@@ -49,7 +49,7 @@ function VarifyDoc() {
     }, []);
 
     return (
-        <>
+        <div className="admin-verification-page">
             <nav className="h-16 sm:h-20 md:h-24 lg:h-24  w-full bg-[#FFFCF7] flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 shadow-sm border-b border-[#F3E7D0]">
                 <div className="flex items-center">
                     <h1 onClick={()=>  navigator(`/admin/${adminID}`)} className="text-lg sm:text-xl md:text-2xl lg:text-3xl  text-[#3B82F6] font-bold font-mono ml-2">
@@ -154,7 +154,7 @@ function VarifyDoc() {
                     </div>
                 </>
             )}
-        </>
+        </div>
     );
 }
 
