@@ -28,3 +28,15 @@
     height: 35px;
     background-color: #C86D42;
 }
+
+@media (max-width: 768px) {
+    .search{
+        width: min(100%, 28rem);
+        min-width: 0;
+    }
+
+    .search input{
+        width: 100%;
+        min-width: 0;
+    }
+}

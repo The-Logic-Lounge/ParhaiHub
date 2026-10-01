@@ -25,7 +25,6 @@ body {
   background: var(--cream);
   color: var(--charcoal);
   font-family: 'Segoe UI', sans-serif;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
